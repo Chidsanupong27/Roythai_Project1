@@ -1,27 +1,19 @@
-import React from "react";
-import Title from "./components/Title";
-import Book from "./components/Book";
+import React, { useState } from 'react'
 
 const App = () => {
 
-  const user  = [
-    { id: 1, name: "top" },
-    { id: 2, name: "Chidsanupong" }
-  ];
+const [msg,setMsg] = useState('Hello')
 
-
-
+const hdlshow = () =>  {
+  setMsg('Hello toppo')
+}
   return (
     <div>
-      <Title txt="Easy React" price={500} />
-
-      <Book data={user}>
-        <h1>Chidsanuong</h1>
-        <p>Posri this is a web</p>
-        <button>Click</button>
-      </Book>
+      {msg}
+      <button onClick={numshow} >Jukkru</button>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App    
+
