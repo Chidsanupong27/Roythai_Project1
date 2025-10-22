@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Book = () => {
+const Book = ({data,children}) => {
+
+  
   return (
-    <div>Book</div>
+    <div> 
+      
+    </div>
   )
 }
 
