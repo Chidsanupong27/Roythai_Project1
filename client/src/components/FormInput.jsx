@@ -20,9 +20,10 @@ const FormInput = () => {
     console.log(value)
     console.log("Hello submit")
   }
-
+//jSX (HTML + JS)
   return (
     <div>
+      <button onClick={() => alert("Hello")}> Hello </button>
       <h2>{value.title}</h2>
       <form onSubmit={hdlSubmit}>
         <label> Title: </label>
