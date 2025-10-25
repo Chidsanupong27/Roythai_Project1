@@ -1,19 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
+import FormInput from './components/FormInput'
 
 const App = () => {
-
-const [msg,setMsg] = useState('Hello')
-
-const hdlshow = () =>  {
-  setMsg('Hello toppo')
-}
   return (
     <div>
-      {msg}
-      <button onClick={numshow} >Jukkru</button>
+      <FormInput/>
     </div>
   )
 }
 
-export default App    
-
+export default App
