@@ -9,9 +9,16 @@ const ConditionBasic = () => {
     console.log(Boolean(NaN))
     console.log(Boolean(undefined))
 
-    const user = null || "Guest"
 
+    // || หาค่าจริงค่าแรก 
+    const user = null ||  undefined ||  "Guest"
     //ที่เหลือเป็นจริงหมด
+
+
+    //conduition 
+    if (user) {
+      console.log("Hello ")
+    }
 
   return (
     <div>ConditionBasic
@@ -20,4 +27,4 @@ const ConditionBasic = () => {
   )
 }
 
-export default ConditionBasic
+export default ConditionBasic 
