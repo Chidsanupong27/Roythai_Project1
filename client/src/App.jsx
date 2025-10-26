@@ -2,6 +2,8 @@ import React from 'react'
 import FormInput from './components/FormInput'
 import ListBasic from './components/ListBasic'
 import UseEffectBasic from './components/UseEffectBasic';
+import FetchBasic from './components/FetchBasic';
+import ConditionBasic from './components/ConditionBasic';
 
 const App = () => {
    const users = [
@@ -11,9 +13,11 @@ const App = () => {
   ];
   return (
     <div>
-      <FormInput/>
+      {/* <FormInput/>
       <ListBasic kaika={users}/>
       <UseEffectBasic/>
+      <FetchBasic/> */}
+      <ConditionBasic/>
     </div>
   )
 }
