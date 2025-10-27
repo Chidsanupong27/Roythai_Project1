@@ -4,6 +4,9 @@ import ListBasic from './components/ListBasic'
 import UseEffectBasic from './components/UseEffectBasic';
 import FetchBasic from './components/FetchBasic';
 import ConditionBasic from './components/ConditionBasic';
+import BasicUseReducer from './components/BasicUseReducer';
+import BasicUseReducer2 from './components/BasicUseReducer2';
+
 
 const App = () => {
    const users = [
@@ -16,8 +19,10 @@ const App = () => {
       {/* <FormInput/>
       <ListBasic kaika={users}/>
       <UseEffectBasic/>
-      <FetchBasic/> */}
+      <FetchBasic/>
       <ConditionBasic/>
+      <BasicUseReducer/> */}
+      <BasicUseReducer2/>
     </div>
   )
 }
