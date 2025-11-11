@@ -4,7 +4,7 @@ import { useState,useEffect } from 'react'
 import List from './List'
 
 
-import {getData} from "../api/todo"
+import {getData,createData} from "../api/todo"
 
 
 const Todo = () => {
@@ -12,13 +12,9 @@ const Todo = () => {
     const [data,setData] = useState([])
     const [ title,setTitle] = useState('')
 
-
-
-
-
     useEffect(()=>{
         //code 
-        getData()
+        handleGetData()
     },[])
 
 
@@ -37,11 +33,21 @@ const Todo = () => {
         setTitle(e.target.value)
     }
 
+const handleAddData = () => {
+    createData({title})
+    .then((res)=>{
+        console.log(res)
+        handleGetData()
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+}
   return (
     <>
     <div>
         <input type="text" name='title' onChange={handleOnChange}/>
-        <button>Add Data</button>
+        <button onClick={handleAddData}>Add Data</button>
     </div>
         <div>
             {data.map((item,index)=>

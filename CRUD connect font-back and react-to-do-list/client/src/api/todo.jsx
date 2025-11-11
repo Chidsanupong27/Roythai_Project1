@@ -10,3 +10,8 @@ export const removeData =async(id) =>
 
 export const createData = async(data) =>
     await axios.post(ENDPOINT,data)
+
+
+
+export const updateDate = async(id,data) => 
+    await axios.put(ENDPOINT+'/'+id,data)
